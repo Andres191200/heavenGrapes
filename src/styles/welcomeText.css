@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,7 +55,7 @@ table {
 	align-items: top;
 	width: 100%;
 	height: 600px;
-	font:  bold 45px sans-serif;
+	font:  bold 60px 'Cedarville Cursive', cursive;
 	background: url(../media/img/wine-cellar.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
    -moz-background-size: cover;
@@ -63,13 +65,94 @@ table {
 
 .welcome-container h1, .welcome-container h2{
 	display: inline-block;
-	margin-top: 150px;
+	height: 50px;
+	margin-top: 118px;
 }
 
 .welcome-container h1{
-	color: #E22;
+	color: #700;
+	transition: .5s ease;
+	animation: moveTextLeft 1s forwards;
+	animation-delay: .5s;
 }
 
 .welcome-container h2{
+	color: #FFF;
+	transition: .5s ease;
+	animation: moveTextRight 1s forwards;
+	animation-delay: .5s;
+}
+
+.welcome-container button{
+	position: absolute;
+	align-self: center;
+	height: 30px;
+	width: 100px;
+	background: transparent;
+	color: #FFF;
+	font: 15px century gothic;
+	margin-bottom: 50px;
+	border: 1px groove #FFF;
+	transition: ease-in-out .5s;
+}
+
+.welcome-container button:hover{
+	background: rgba(150,0,0,.5);
+	transition: ease-in-out .5s;
+}
+
+@keyframes moveTextLeft{
+	from{transform: translateX(0);}
+	to{transform: translateX(-50px);}
+}
+
+@keyframes moveTextRight{
+	from{transform: translateX(0);}
+	to{transform: translateX(50px);}
+}
+
+.welcome-text{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.welcome-text img:not(.wood-sign-container img){
+	animation: bringWineLogoToFront 1.5s ease .1s forwards;
+	margin-top: 80px;
+	position: absolute;
+	justify-self: center;
+	height: 150px;
+	width: 70px;
+}
+
+@keyframes bringWineLogoToFront{
+	0% {transform: scale(0)}
+	50% {transform: scale(0)}
+	100% {transform: scale(1)}
+/*
+	0%{transform: scale(0)}
+	50%{transform: scale(.5)}
+	100%{transform: scale(1)}*/
+}
+
+.wood-sign-container{
+	position: absolute;
+	display: flex;
+	overflow: hidden;
+	width: 100%;  /*WITH 100% DOESN'T WORK WHY??*/
+	height: 100%;
+	justify-content: center;
+}
+
+.wood-sign-container img{
+	position: absolute;
+	height: 300px;
+	width: 600px;
+	transform: translateY(-68px);
+}
+
+button a{
+	text-decoration: none;
 	color: #FFF;
 }
