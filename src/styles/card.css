@@ -53,12 +53,17 @@ table {
 	flex-direction: column;
 	height: 400px;
 	width: 350px;
-	border: 1px groove #666;
+	border: 1px groove #BBB;
 	margin: 40px 10px 0 10px;
 }
 
 .card img{
 	margin-top: 20px;
 	height: 180px;
-	width: 100px;
+	max-width: 100px;
+}
+
+.card p{
+	font: 15px century gothic;
+	margin: 40px 20px;
 }

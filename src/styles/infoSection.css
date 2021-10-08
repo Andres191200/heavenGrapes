@@ -56,7 +56,7 @@ table {
 }
 
 .some-wines-text{
-	font: 40px 'Cedarville Cursive', cursive;
+	font: 36px 'Cedarville Cursive', cursive;
 	display: flex;
 	justify-content: center;
 	align-self: flex-start;
