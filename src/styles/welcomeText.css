@@ -52,6 +52,7 @@ table {
 .welcome-container{
 	display: flex;
 	justify-content: center;
+	background: red;
 	align-items: top;
 	width: 100%;
 	height: 600px;
@@ -90,10 +91,17 @@ table {
 	width: 100px;
 	background: transparent;
 	color: #FFF;
-	font: 15px century gothic;
-	margin-bottom: 50px;
+	font: 15px cursive;
 	border: 1px groove #FFF;
 	transition: ease-in-out .5s;
+}
+
+.welcome-text p{
+	position: absolute;
+	margin-top: 240px;
+	height: 20px;
+	color: #FFF;
+	font: bold 25px cursive;
 }
 
 .welcome-container button:hover{

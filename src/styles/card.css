@@ -53,8 +53,14 @@ table {
 	flex-direction: column;
 	height: 400px;
 	width: 350px;
-	border: 1px groove #BBB;
 	margin: 40px 10px 0 10px;
+	transition: .5s;
+	border-radius: 20px;
+}
+
+.card:hover{
+	background: rgba(130,10,10,.3);
+	transition: .5s;
 }
 
 .card img{
@@ -66,4 +72,12 @@ table {
 .card p{
 	font: 15px century gothic;
 	margin: 40px 20px;
+	height: 65px;
+}
+
+.info-wine{
+	width: 100%;
+	text-align: center;
+	font: 18px century gothic;
+	color: #32830c;
 }

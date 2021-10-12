@@ -17,8 +17,10 @@ const Welcome = () =>{
 						<h1>Heaven</h1>
 						<img src={wineLogo}/>
 						<h2>grapes</h2>
+						<p>World class Wines! :)</p>
 					</div>
-					<button><a href="#infoSection">See more</a></button>
+
+					<button><a href="#infoSection">Read more</a></button>
 				</div>
 			);
 }
