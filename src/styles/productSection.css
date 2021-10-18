@@ -3,8 +3,6 @@
    License: none (public domain)
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,8 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-.info-container{
-	font-family: century gothic;
+.product-main-container{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -58,51 +55,25 @@ table {
 	width: 100%;
 }
 
-.img-container, .about-us-container{
-	height: 80%;
-	width: 80%;
-}
-
-.img-container{
-	overflow: hidden;
-	margin: 0 10px 0 40px;
-	width: 1500px;
-}
-
-.about-us-container{
-	margin-right: 40px;
-}
-
-.about-us-container h1{
-	font: bold 50px aclonica, sans-serif;
-}
-
-.about-us-container p, h2{
-	margin-top: 10px;
-	width: 200px;
-}
-
-.about-us-container h2{
-	margin-top: 20px;
-	font-weight: bold;
+.some-wines-text{
+	font: 36px 'Cedarville Cursive', cursive;
+	display: flex;
+	justify-content: center;
+	align-self: flex-start;
+	position: absolute;
+	width: 100%;
 	color: #911;
 }
 
-ul{
-	animation: slider 20s infinite;
+
+.card-container{
+	display: flex;
+	height: 90%;
+	width: 90%;
 }
 
-@keyframes slider{
-	0%{margin-left: 0;}
-	15%{margin-left: 0;}
-	20%{margin-left: -100%;}
-	40%{margin-left: -100%;}
-	45%{margin-left: -200%;}
-	65%{margin-left: -200%;}
-	70%{margin-left: -300%;}
-	90%{margin-left: -300%;}
-	100%{margin-left: 0;}
 
 
-}
+
+
 

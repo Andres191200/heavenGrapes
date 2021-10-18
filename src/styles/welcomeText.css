@@ -148,7 +148,6 @@ table {
 	position: absolute;
 	display: flex;
 	overflow: hidden;
-	width: 100%;  /*WITH 100% DOESN'T WORK WHY??*/
 	height: 100%;
 	justify-content: center;
 }

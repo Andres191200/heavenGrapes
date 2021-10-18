@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 
 import Header from './components/header.jsx';
 import Welcome from './components/welcome.jsx';
-import InfoSection from './components/InfoSection.jsx';
+import ProductSection from './components/productSection.jsx';
+import InfoSection from './components/infoSection.jsx';
 
 
 function App(){
@@ -21,6 +22,8 @@ function App(){
         
       <Welcome/>
       
+
+      <ProductSection/>
 
       <InfoSection/>
 

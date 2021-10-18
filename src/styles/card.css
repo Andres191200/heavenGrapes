@@ -59,7 +59,8 @@ table {
 }
 
 .card:hover{
-	background: rgba(130,10,10,.3);
+	background: rgba(0,0,0,.3);
+	cursor: pointer;
 	transition: .5s;
 }
 
@@ -75,9 +76,9 @@ table {
 	height: 65px;
 }
 
-.info-wine{
-	width: 100%;
+.card h1{	
 	text-align: center;
 	font: 18px century gothic;
 	color: #32830c;
 }
+  

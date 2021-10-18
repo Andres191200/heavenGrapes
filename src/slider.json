@@ -1,0 +1,22 @@
+[
+	{
+		"key":"1",
+		"alt":"wine cellar",
+		"img":"media/img/wine-carousel-1.jpg"
+	},
+	{
+		"key":"2",
+		"alt":"wine cellar",
+		"img":"media/img/wine-carousel-2.jpg"
+	},
+	{
+		"key":"3",
+		"alt":"wine cellar",
+		"img":"media/img/wine-carousel-3.jpg"
+	},
+	{
+		"key":"4",
+		"alt":"wine cellar",
+		"img":"media/img/wine-carousel-4.jpg"
+	}
+]

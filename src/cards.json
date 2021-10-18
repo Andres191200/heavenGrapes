@@ -2,21 +2,25 @@
 	{
 		"description":"A wine from north antartica elaborated with rare icy-grapes, it comes from New Zeland, One of our sweetest wines :)... some more description here...",
 		"img":"1",
-		"price":"250 EUR"
+		"price":"250 EUR",
+		"url":"/products/1"
 	},
 	{
 		"description":"Special acid grapes wine with little biterness hints and couple of Chardonnay grapes extract, ideal to invite some friends :o",
 		"img":"2",
-		"price":"180 EUR"
+		"price":"180 EUR",
+		"url":"/products/2"
 	},
 	{
 		"description":"Classic malbec wine of our house, is our speciality Malbec wines, one of our best wines",
 		"img":"3",
-		"price":"230 EUR"
+		"price":"230 EUR",
+		"url":"/products/3"
 	},
 	{
 		"description":"Grenache and Cabernet grapes wine with acid hints that it'll combine with sweet of Cabernet flavour",
 		"img":"4",
-		"price":"199 EUR"
+		"price":"199 EUR",
+		"url":"/products/4"
 	}
 ]

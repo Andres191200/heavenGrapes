@@ -20,7 +20,7 @@ const Welcome = () =>{
 						<p>World class Wines! :)</p>
 					</div>
 
-					<button><a href="#infoSection">Read more</a></button>
+					<button><a href="#productSection">Read more</a></button>
 				</div>
 			);
 }
