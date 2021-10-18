@@ -3,6 +3,15 @@
    License: none (public domain)
 */
 
+@use postcss-preset-env;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+:root {
+    --ad-Color-prim: #111;
+    --ad-Color-sec: #00E676;
+    --ad-Color-del: #E53935;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 
 html, body, div, span, applet, object, iframe,
@@ -31,6 +40,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	overflow-x: hidden;
 	line-height: 1;
 }
 ol, ul {
@@ -50,27 +60,64 @@ table {
 }
 
 .info-container{
+	background: #BBB;
 	font-family: century gothic;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 500px;
+	align-items: flex-end;
+	height: 600px;
 	width: 100%;
 }
 
-.img-container, .about-us-container{
-	height: 80%;
-	width: 80%;
+
+
+.curve{
+	transform: translateY(-180%);
+	position: absolute;
+	height: 200px;
+	width: 100%;
 }
 
+.curve::before{
+	content: '';
+	display: block;
+	position: absolute;
+	border-radius: 100% 50%;
+	width: 65%;
+	height: 100%;
+	background: #BBB;
+	transform: translate(82%, -65%);
+}
+
+.curve::after{
+	content: '';
+	display: block;
+	position: absolute;
+	border-radius: 100% 50%;
+	width: 65%;
+	height: 100%;
+	background: #FFF;
+	transform: translate(-9%, -80%);
+	z-index: -1;
+}
+
+
 .img-container{
+	border-radius: 10px;
+	margin: 0 10px 40px 40px;
+	height: 400px;
+	width: 55vw;
 	overflow: hidden;
-	margin: 0 10px 0 40px;
-	width: 1500px;
 }
 
 .about-us-container{
-	margin-right: 40px;
+	display: flex;
+   flex-direction: column;
+   margin:0 40px 40px 0;
+   height: 400px;
+}
+
+.about-us-container *{
+	align-self: flex-start;
 }
 
 .about-us-container h1{
@@ -102,7 +149,10 @@ ul{
 	70%{margin-left: -300%;}
 	90%{margin-left: -300%;}
 	100%{margin-left: 0;}
-
-
 }
 
+.wine-bottle{
+	right: -200px;
+	position: absolute;
+	height: 500px;
+}
