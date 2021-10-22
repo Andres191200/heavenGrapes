@@ -1,34 +1,27 @@
 import React, {Fragment, useRef, useState} from 'react';
 import ReactDOM from 'react-dom';
+import {Route, BrowserRouter, Switch} from 'react-router-dom';
 
-
-import Header from './components/header.jsx';
-import Welcome from './components/welcome.jsx';
-import ProductSection from './components/productSection.jsx';
-import InfoSection from './components/infoSection.jsx';
+import MainPage from './components/mainPage.jsx';
+import Login from './components/login.jsx';
 
 
 function App(){
+  return(
 
-  const scrollDownBtn = React.createRef();
+    <BrowserRouter>
+      <Switch>
+        <Route path="/login">
+          <Login/>
+        </Route>
 
-  const [scrollDiv, setScrollDiv] = useState('alalita');
-
-  return (
-    <Fragment>
-      <div className="header-container">
-        <Header />
-      </div>
-        
-      <Welcome/>
-      
-
-      <ProductSection/>
-
-      <InfoSection/>
-
-    </Fragment>
-  );
+       <Route path="/">
+          <MainPage/>
+        </Route>  
+      </Switch>
+    </BrowserRouter>
+    );
+  
 }
 
 export default App;

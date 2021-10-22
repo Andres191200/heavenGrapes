@@ -149,14 +149,15 @@ table {
 	display: flex;
 	overflow: hidden;
 	height: 100%;
+	width: 700px;
 	justify-content: center;
 }
 
 .wood-sign-container img{
 	position: absolute;
 	height: 300px;
-	width: 600px;
-	transform: translateY(-68px);
+	width: 100%;
+	transform: translate(-20px, -68px);
 }
 
 button a{

@@ -53,6 +53,11 @@ table {
 	align-items: center;
 	height: 700px;
 	width: 100%;
+}	
+
+.product-main-container a{
+	text-decoration: none;
+	color: #000;
 }
 
 .some-wines-text{
@@ -66,11 +71,6 @@ table {
 }
 
 
-.card-container{
-	display: flex;
-	height: 90%;
-	width: 90%;
-}
 
 
 

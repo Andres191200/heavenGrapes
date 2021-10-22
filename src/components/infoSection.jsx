@@ -28,7 +28,7 @@ const infoSection = () =>{
 					</p>
 					<h2>we hope you enjoy our wines :D</h2>
 				</div>
-				<img class="wine-bottle" src={require('../media/img/wine-bottle.png').default}/>
+				<img className="wine-bottle" src={require('../media/img/wine-bottle.png').default}/>
 
 			</div>
 
