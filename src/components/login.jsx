@@ -19,7 +19,9 @@ const Login = (props) =>{
 	}
 
 	const inputFocusOut = (event) =>{
-		event.target.nextElementSibling.classList.remove('active');
+		if(event.target.value === ''){
+			event.target.nextElementSibling.classList.remove('active');	
+		}
 	}
 
 	return(

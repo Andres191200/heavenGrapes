@@ -112,6 +112,9 @@ table {
 
 .icon, .field-container span{
 	position: absolute;
+	background: #FFF;
+	text-align: center;
+	width: 55px;
 	font-size: 15px;
 	margin: 0 10px; 
 	transition: .3s;
@@ -119,7 +122,7 @@ table {
 
 .active{
 	font-size: 10px !important;
-	transform: translate(-10px,-25px);
+	transform: translate(-5px,-15px);
 	transition: .3s;
 }
 
