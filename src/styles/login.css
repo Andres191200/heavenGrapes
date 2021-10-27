@@ -96,6 +96,10 @@ table {
 	width: 350px;
 }
 
+form{
+	width: 100%;
+}
+
 .field-input{
 	margin: 10px 0;
 	height: 25px;
@@ -174,9 +178,15 @@ table {
 	transition: .5s;
 }
 
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
-.welcome-login, .field-container, .login-container button, .no-account, .back-icon-container{
-	transform: translateX(-30px);
+form, .welcome-login, .no-account{
+	transform: translateX(-25px);
 }
 
 .no-account{
@@ -196,3 +206,6 @@ table {
 	font-weight: bold;
 }
 
+.error{
+	color: #D00 !important;
+}
