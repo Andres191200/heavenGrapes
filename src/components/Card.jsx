@@ -9,8 +9,13 @@ const Card = (props) =>{
 	return(
 		<div className="card" onClick={props.onClick}>
 			<img src={require('../media/img/wine-prod-' + props.img + '.png').default}/>
+			<div className="wine-name-container">
+				<h1 className="wine-name">{props.name}</h1>
+			</div>
 			<p>{props.description}</p>
-			<h1 className="price">{props.price}</h1>
+			<div className="price-container">
+				<h1 className="price">{props.price}</h1>
+			</div>
 		</div>
 	)
 }

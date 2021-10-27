@@ -1,24 +1,52 @@
 [
 	{
+		"name":"St. Louis Black",
 		"description":"A wine from north antartica elaborated with rare icy-grapes, it comes from New Zeland, One of our sweetest wines :)... some more description here...",
+		"country":"South Antartica",
+		"manufacturer":"Iceberg wines A.A",
+		"size":"0.75 L",
+		"year":"2017",
+		"grape":"Icy Muscats",
+		"strength":"8",
 		"img":"1",
 		"price":"250 EUR",
 		"url":"/products/1"
 	},
 	{
+		"name":"White dry",
 		"description":"Special acid grapes wine with little biterness hints and couple of Chardonnay grapes extract, ideal to invite some friends :o",
+		"country":"Perú",
+		"manufacturer":"Bodegas perú",
+		"size":"0.60 L",
+		"year":"2013",
+		"grape":"Viognier",
+		"strength":"3",
 		"img":"2",
 		"price":"180 EUR",
 		"url":"/products/2"
 	},
 	{
+		"name":"Mr. Joe Malbecs",	
 		"description":"Classic malbec wine of our house, is our speciality Malbec wines, one of our best wines",
+		"country":"Germany",
+		"manufacturer":"Schönfield",
+		"size":"0.70 L",
+		"year":"2019",
+		"grape":"Malbec",
+		"strength":"5",
 		"img":"3",
 		"price":"230 EUR",
 		"url":"/products/3"
 	},
 	{
-		"description":"Grenache and Cabernet grapes wine with acid hints that it'll combine with sweet of Cabernet flavour",
+		"name":"John Cabernet Gato Negro ",	
+		"description":"Very Strong Grenache and Cabernet grapes wine with acid hints that it'll combine with sweet of Cabernet flavour",
+		"country":"USA",
+		"manufacturer":"Newport Wines",
+		"size":"0.75 L",
+		"year":"2015",
+		"grape":"Cabernet - Grenache",
+		"strength":"18",
 		"img":"4",
 		"price":"199 EUR",
 		"url":"/products/4"

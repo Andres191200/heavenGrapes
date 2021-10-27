@@ -26,7 +26,15 @@ const ProductSection = () =>{
 					<h1>Our catalog</h1>
 				</div>
 				{cards.map((card,index) =>
-					<a href={"/product/" + index}><Card onClick={getInfoProduct} key={index} description={card.description} img={card.img} price={card.price}/></a>
+					<a href={"/product/" + index}>
+						<Card onClick={getInfoProduct}
+						key={index} 
+						strength={card.strength}
+						description={card.description}
+						img={card.img}
+						price={card.price}
+						name={card.name}/>
+					</a>
 				)}
 			</div>
 			);

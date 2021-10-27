@@ -51,9 +51,9 @@ table {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	height: 400px;
+	height: 450px;
 	width: 300px;
-	margin: 40px 10px 0 10px;
+	margin: 0 10px 0 10px;
 	transition: .5s;
 	border-radius: 20px;
 }
@@ -66,19 +66,38 @@ table {
 
 .card img{
 	margin-top: 20px;
-	height: 180px;
+	min-height: 180px;
+	max-height: 180px;
+	min-width: 50px;
 	max-width: 100px;
 }
 
 .card p{
 	font: 15px century gothic;
-	margin: 40px 20px;
-	height: 65px;
+	margin: 0 20px 50px 20px;
+	min-height: 65px;
 }
 
-.card h1{	
+.price-container{
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+.price{	
 	text-align: center;
 	font: 18px century gothic;
 	color: #32830c;
+	z-index: 20;
+}	
+
+.wine-name-container{
+	margin: 40px 0 0 0;
 }
-  
+
+.wine-name{
+	margin-bottom: 20px;
+	color: #000 !important;
+	font: bold 20px arial !important;
+  }

@@ -10,9 +10,7 @@ function mainPage(){
 
   return(
     <Fragment>
-      <div className="header-container">
-        <Header />
-      </div>
+      <Header />
           
       <Welcome/>    
 
