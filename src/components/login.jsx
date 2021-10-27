@@ -47,7 +47,7 @@ const Login = (props) =>{
 				</div>
 
 				<div className="password-container field-container">
-					<input className="field-input password-input"type="text" name="password" onFocus={inputFocus} onBlur={inputFocusOut}/>
+					<input className="field-input password-input"type="password" name="password" onFocus={inputFocus} onBlur={inputFocusOut}/>
 					<span onClick={inputFocus}>Password</span>
 					<FontAwesomeIcon icon={faLock} className="icon"/>
 				</div>
