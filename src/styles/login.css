@@ -64,11 +64,11 @@ table {
 }
 
 .back-icon-container{
-
 	margin-top: 10px;
 	color: #C00 !important;
-	height: 0;
+	height: 20px;
 	width: 100%;
+
 }
 
 .back-icon-container a{
@@ -195,8 +195,9 @@ form, .welcome-login, .no-account{
 	justify-content: center;
 	position: relative;
 	text-align: center;
+	margin-bottom: 20px;
 	width: 100%;
-	height: 48%;
+	height: 100%;
 }
 
 .no-account a{
@@ -208,4 +209,29 @@ form, .welcome-login, .no-account{
 
 .error{
 	color: #D00 !important;
+}
+
+@media (orientation: portrait){
+
+	.main-container{
+		background: #FFF;
+	}
+
+	.image-container{
+		display: none;
+	}
+
+	.login-container{
+		justify-content: center;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	form, .welcome-login, .no-account{
+	transform: translateX(0);
+	}
+
+	.back-icon{
+		margin-left: 5px;
+	}
 }
