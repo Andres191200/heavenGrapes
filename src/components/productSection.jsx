@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef as UseRef} from 'react';
 import ReactDOM from 'react-dom';
 
 import Card from './Card.jsx';
@@ -18,14 +18,27 @@ const getInfoProduct = (event) =>{
 	}
 }
 
-const ProductSection = () =>{
+const ProductSection = (props) =>{
+	const btnref = props.ref;
+
+	const divRef = UseRef();
+
+	const scrollDown = (ref) =>{
+		window.scrollTo(0, ref.divRef.current);
+	}
+
+	const scrollDiv = () =>{
+		scrollDown(btnref.current);
+	}
 
 		return (
-			<div className="product-main-container" id="#productSection">
+			<div  ref={divRef} className="product-main-container" id="#productSection">
 				<div className="some-wines-text">
 					<h1>Our catalog</h1>
 				</div>
-				{cards.map((card,index) =>
+				<button onClick={scrollDiv}>click</button>
+				{
+					cards.map((card,index) =>
 					<a href={"/product/" + index}>
 						<Card onClick={getInfoProduct}
 						key={index} 

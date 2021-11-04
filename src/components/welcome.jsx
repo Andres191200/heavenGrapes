@@ -1,13 +1,18 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect, useRef as UseRef} from 'react';
 import ReactDOM from 'react-dom';
 
 //SOME STATIC FILES
 import wineLogo from '../media/img/wineLogo.png';
 import woodSign from '../media/img/woodSign.png';
 
-import '../styles/welcomeText.css'; //STYLES
+import '../styles/welcomeText.css'; 
 
-const Welcome = () =>{
+
+
+
+
+const Welcome = (props) =>{
+
 		return(
 				<div className="welcome-container">
 					<div className="welcome-text">
@@ -20,7 +25,7 @@ const Welcome = () =>{
 						<p>World class Wines! :)</p>
 					</div>
 
-					<button><a href="#productSection">Read more</a></button>
+					<button ref={props.ref}>Read more</button>
 				</div>
 			);
 }

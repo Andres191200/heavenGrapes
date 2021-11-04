@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useRef as UseRef} from 'react';
 
 import Header from './header.jsx';
 import Welcome from './welcome.jsx';
@@ -8,13 +8,19 @@ import InfoSection from './infoSection.jsx';
 
 function mainPage(){
 
+
+  const buttonRef = UseRef();
+  
+
+
+
   return(
     <Fragment>
-      <Header />
+      <Header/>
           
-      <Welcome/>    
+      <Welcome ref={buttonRef}/>    
 
-      <ProductSection/>
+      <ProductSection ref={buttonRef}/>
 
       <InfoSection/>
 

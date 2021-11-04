@@ -1,0 +1,126 @@
+@import-normalize;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.custom-shape-divider-bottom-1635720974 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1635720974 svg {
+    position: relative;
+    display: block;
+    width: calc(186% + 1.3px);
+    height: 223px;
+}
+.custom-shape-divider-bottom-1635720974 .shape-fill {
+    fill: #999;
+}
+.main-about-us-container{
+	display: flex;
+	background: #FFF;
+	overflow: hidden;
+	width: 100vw;
+	height: 580px;
+}
+.about-info-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(-500px);
+	height: 100%;
+	width: 100%;
+}
+.icon-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #99999980;
+	border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+.icon-container, .info{
+	transform: translateY(-100px);
+}
+.about-icon{
+	color: #FFF;
+	height: 80px;
+	width: 80px;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.info h1{
+	font: bold 20px arial;
+	margin: 5px;
+}
+
+.info p{
+	font-family: century gothic;
+	color: #333;
+	font-size: 16px;
+	width: 70%;
+}
+
+.dropdown{
+	transform: translateY(0);
+	transition-delay: calc(var(--order) * 100ms);
+	transition-duration: 1s;
+}
+
+
