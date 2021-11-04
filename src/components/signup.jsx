@@ -11,8 +11,6 @@ const signup = () =>{
 	const passwordRef = UseRef();
 	const confirmPasswordRef = UseRef();
 
-	console.log(passwordRef.current);
-
 	const onSubmit = data =>{
 		console.log(data);
 
@@ -24,6 +22,10 @@ const signup = () =>{
 					// 	}
 					// }
 	}
+
+	UseEffect(() =>{
+		console.log(passwordRef);
+	},[]);
 
 	return(
 		<div className="signup-main-container">
