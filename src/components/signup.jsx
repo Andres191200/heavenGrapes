@@ -14,52 +14,57 @@ const signup = () =>{
 	const onSubmit = data =>{
 		console.log(data);
 
-					// 		{		
-					// 	if(confirmPasswordRef.value.length != 0){
-					// 		if(passwordRef.value != confirmPasswordRef.value){
-					// 			console.log('dont match');
-					// 		}
-					// 	}
-					// }
+
+	}
+
+	const passwordsMatch = (event) =>{
+		if(event.target.value != passwordRef.current.firstElementChild.value){
+			console.log('dont match');
+		}
 	}
 
 	UseEffect(() =>{
-		console.log(passwordRef);
+		console.log(usernameRef);
 	},[]);
 
 	return(
-		<div className="signup-main-container">
+		<div className="signup-main-container" >
 			<div className="signup-form-container">
 				<form onSubmit={handleSubmit(onSubmit)}>
-					<div className="sign-up-username-container input-container">
-						<input type="text" name="username" placeholder="Username"
+					<div className="sign-up-username-container input-container" ref={usernameRef}>
+						<input 
+						type="text" 
+						name="username" 
+						placeholder="Username" 
 						{...register('username',{required:true})}
 						/>
 					</div>
 					<div className="sign-up-email-container input-container">
-						<input type="text" name="email" placeholder="E-mail"
+						<input 
+						type="text" 
+						name="email" 
+						placeholder="E-mail"
 						{...register('email',{required:true})}
 						/>
 					</div>
 
-					<div className="sign-up-password-container input-container">
+					<div className="sign-up-password-container input-container" ref={passwordRef}>
 						<input 
-						ref={passwordRef}
 						id="password"
 						type="password" 
 						name="password" 
 						placeholder="Password"
-						{...register('password',{required:true, minLength:8})}
+						{...register('password',{required:true, minLength:8})}				
 						/>
 					</div>
 
 					<div className="sign-up-password-confirm-container input-container">
 						<input 
-						ref={confirmPasswordRef}
+						onChange={passwordsMatch}
 						id="password-confirm" 
 						type="password" 
 						name="password" 
-						placeholder="Confirm password"/>	
+						placeholder="Confirm password"/>
 					</div>
 
 					<h1 className="error">
