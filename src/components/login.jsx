@@ -53,11 +53,11 @@ const Login = (props) =>{
 					<h1>Welcome!</h1>
 					<h1>Please log in</h1>
 				</div>
-				<form onSubmit={handleSubmit(onSubmit)}>
+				<form className="login-form" onSubmit={handleSubmit(onSubmit)}>
 					<div className="username-container field-container">
 						<input
 							name="username"
-							className="field-input username-input"type="text" 
+							className="login-field-input username-input"type="text" 
 							{...register('username',{required:true})}		
 							onFocus={inputFocus} 
 							onBlur={inputFocusOut}
@@ -69,7 +69,7 @@ const Login = (props) =>{
 					<div className="password-container field-container">
 						<input 
 							name="password" 
-							className="field-input password-input"
+							className="login-field-input password-input"
 							type="password" 
 							{...register('password',{required:true})}		
 							onFocus={inputFocus} 
@@ -88,7 +88,7 @@ const Login = (props) =>{
 					</h1>
 				
 
-					<button>Log in</button>
+					<button type="submit">Log in</button>
 				</form>
 				<div className="no-account">
 					<h2>Don't have an account?</h2>

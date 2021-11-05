@@ -47,8 +47,46 @@ table {
 	border-spacing: 0;
 }
 
+.grapes, .wine-filling-cup{
+	position: absolute;
+}
+
+.grapes{
+	position: absolute;
+	left: 0;
+	top: -10px;
+	height: 650px;
+
+}
+
+.wine-filling-cup{
+	position: absolute;
+	height: 700px;
+	right: -5px;
+	bottom: 0;
+	
+}
+
+.signup-logo-container{
+	display: flex;
+	justify-content: center;
+	height: 100px;
+	width: 100%;
+}
+
+.signup-logo-container img{
+	width: 300px;
+	height: 100px;
+}
+
+.signup-welcome-container h1{
+	margin-top: 10px;
+	font:20px century gothic;
+}
+
 .signup-main-container{
 	display: flex;
+	flex-direction: column;
 	justify-content:center;
 	align-items: center;
 	height: 100vh;
@@ -56,7 +94,47 @@ table {
 }
 
 .signup-form-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	height: 600px;
-	width: 600px;
+	width: 400px;
 	background: #CCC;
+}
+
+.signup-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 70%;
+	width: 100%;
+}
+
+.signup-field-input{
+	margin: 0;
+	width: 300px;
+	height: 25px;
+	font-family: century gothic;
+	transition: .5s;
+}
+
+.errors-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font: bold 15px century gothic;
+	height: 70px;
+	width: 70%;
+	border-radius: 10px;
+}
+
+.errors-container h1{
+	margin: 5px;
+}
+
+.signup-field-input:focus{
+	border: 2px solid #911;
+	transition: .5s;
+	outline: none;
 }
