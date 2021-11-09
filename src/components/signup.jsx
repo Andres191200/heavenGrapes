@@ -15,19 +15,40 @@ const signup = () =>{
 	const confirmPasswordRef = UseRef();
 
 	const [PasswordsMatch, setPasswordsMatch] = UseState(true);
+	const [IsPasswordStrong, setIsPasswordStrong] = UseState(false); 
 
 	const onSubmit = data =>{
 		console.log(data);
 	}
 
 	const passwordsMatch = () =>{
-			if(confirmPasswordRef.current.firstElementChild.value != passwordRef.current.firstElementChild.value) {
-				setPasswordsMatch(false);
+		var BreakException = {};
+		const symbols = ['!','%','#'];
+		const password = passwordRef.current.firstElementChild.value;
+		const confirmPassword = confirmPasswordRef.current.firstElementChild.value;
+		const fillBar = document.querySelector(`.fill-bar`);
+
+		if(password.length>0){
+			fillBar.classList.add('weak-password');
+			if(password.length>=8){
+				for(let i=0;i<symbols.length;i++){
+					if(password.includes(symbols[i])){
+						fillBar.classList.add('ok-password');
+						return 0;
+					}else fillBar.classList.remove('ok-password');
+				}
 			}
-			else{
-				setPasswordsMatch(true);
+		}else fillBar.classList.remove('weak-password','ok-password','strong-password');
+
+		if(IsPasswordStrong){
+				if(password != confirmPassword) {
+					setPasswordsMatch(false);
+				}
+				else{
+					setPasswordsMatch(true);
+				}
 			}
-	}
+		}
 
 	UseEffect(() =>{
 		console.log(usernameRef);
@@ -74,6 +95,9 @@ const signup = () =>{
 						{...register('password',{required:true, minLength:8})}				
 						onChange={passwordsMatch} //ERROR ENTRE EL REGISTER Y EL ONCHANGE!!
 						/>
+						<div className="verify-password">
+							<div className="fill-bar"/>
+						</div>
 					</div>
 
 					<div className="sign-up-password-confirm-container input-container" ref={confirmPasswordRef}>

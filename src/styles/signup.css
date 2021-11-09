@@ -138,3 +138,34 @@ table {
 	transition: .5s;
 	outline: none;
 }
+
+.verify-password{
+	width: 50%;
+	height: 5px;
+	margin-top: 10px;
+	background: #FFF;
+}
+
+.fill-bar{
+	width: 0%;
+	background: red;
+	height: 100%;
+}
+
+.weak-password, .ok-password, .good-password{
+	transition: .8s;
+}
+
+.weak-password{
+	width: 30%;
+}
+
+.ok-password{
+	width: 70%;
+	background: #F80;
+}
+
+.strong-password{
+	width: 100%;
+	background: #0A0;
+}
