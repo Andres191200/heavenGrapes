@@ -8,7 +8,7 @@ import grapes from '../media/img/grapes.png';
 
 const signup = () =>{
 	
-	const passwordStrongOrWeakMessage = document.querySelector(`.password-strongness`);
+	
 	const {register, handleSubmit, formState: { errors }} = UseForm();
 
 	const usernameRef = UseRef();
@@ -33,6 +33,7 @@ const signup = () =>{
 		const symbols = ['!','#','$','%','&','=','?','¿','¡','¨','*',']','[',':','_','.','-',';',',','(',')'];	
 		const password = passwordRef.current.firstElementChild.value;
 		const confirmPassword = confirmPasswordRef.current.firstElementChild.value;
+		const passwordStrongOrWeakMessage = document.querySelector(`.password-strongness`);
 		const fillBar = document.querySelector(`.fill-bar`);
 
 		if(password.length>0){
