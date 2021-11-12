@@ -169,3 +169,16 @@ table {
 	width: 100%;
 	background: #0A0;
 }
+
+.password-strongness{
+	font: 15px century gothic;
+}
+
+.weak{
+	color: #A00 !important; 
+}
+
+.strong{
+	color: #282 !important;
+}
+

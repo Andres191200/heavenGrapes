@@ -7,52 +7,71 @@ import wineFillingCup from '../media/img/wine-filling-cup.png';
 import grapes from '../media/img/grapes.png';
 
 const signup = () =>{
-
+	
+	const passwordStrongOrWeakMessage = document.querySelector(`.password-strongness`);
 	const {register, handleSubmit, formState: { errors }} = UseForm();
 
 	const usernameRef = UseRef();
 	const passwordRef = UseRef();
 	const confirmPasswordRef = UseRef();
 
+	
+
 	const [PasswordsMatch, setPasswordsMatch] = UseState(true);
-	const [IsPasswordStrong, setIsPasswordStrong] = UseState(false); 
+	const [IsPasswordStrong, setIsPasswordStrong] = UseState(''); 
 
 	const onSubmit = data =>{
 		console.log(data);
 	}
+	
 
-	const passwordsMatch = () =>{
-		var BreakException = {};
-		const symbols = ['!','%','#'];
+	const PasswordValidation = () =>{	
+		var symbolsInPassword = [];
+		var startIndex = 0;
+		let index=0;
+
+		const symbols = ['!','#','$','%','&','=','?','¿','¡','¨','*',']','[',':','_','.','-',';',',','(',')'];	
 		const password = passwordRef.current.firstElementChild.value;
 		const confirmPassword = confirmPasswordRef.current.firstElementChild.value;
 		const fillBar = document.querySelector(`.fill-bar`);
 
 		if(password.length>0){
 			fillBar.classList.add('weak-password');
-			if(password.length>=8){
-				for(let i=0;i<symbols.length;i++){
-					if(password.includes(symbols[i])){
-						fillBar.classList.add('ok-password');
-						return 0;
-					}else fillBar.classList.remove('ok-password');
-				}
-			}
-		}else fillBar.classList.remove('weak-password','ok-password','strong-password');
+			setIsPasswordStrong('Weak password');
 
-		if(IsPasswordStrong){
-				if(password != confirmPassword) {
-					setPasswordsMatch(false);
-				}
-				else{
-					setPasswordsMatch(true);
-				}
-			}
+			passwordStrongOrWeakMessage.classList.remove('strong');
+			passwordStrongOrWeakMessage.classList.add('weak');
+
+			password != confirmPassword ? setPasswordsMatch(false) : setPasswordsMatch(true);
+
+			if(password.length>=8){
+					symbols.forEach((symbol) =>{ //12345678#%!!
+						while((index = password.indexOf(symbol, startIndex)) > -1){
+							symbolsInPassword.push(symbol);
+							startIndex = index+1;
+						}
+					})
+					if(symbolsInPassword.length>=1)
+					{
+						fillBar.classList.add('ok-password'); 
+						setIsPasswordStrong('Strong password!');
+
+						passwordStrongOrWeakMessage.classList.remove('weak');
+						passwordStrongOrWeakMessage.classList.add('strong');
+						if(symbolsInPassword.length>=3)
+						{
+							fillBar.classList.add('strong-password');
+						}else fillBar.classList.remove('strong-password');
+					}else fillBar.classList.remove('ok-password')
+				}else fillBar.classList.remove('ok-password');
+		}else {
+			fillBar.classList.remove('weak-password','ok-password','strong-password');	
+			setIsPasswordStrong('');
 		}
 
-	UseEffect(() =>{
-		console.log(usernameRef);
-	},[]);
+		
+			
+	}
 
 	return(
 		<div className="signup-main-container" >
@@ -93,16 +112,19 @@ const signup = () =>{
 						name="password" 
 						placeholder="Password"
 						{...register('password',{required:true, minLength:8})}				
-						onChange={passwordsMatch} //ERROR ENTRE EL REGISTER Y EL ONCHANGE!!
+						onChange={PasswordValidation} //ERROR ENTRE EL REGISTER Y EL ONCHANGE!!
 						/>
 						<div className="verify-password">
 							<div className="fill-bar"/>
+							<div className="password-strongness">
+								{IsPasswordStrong}
+							</div>
 						</div>
 					</div>
 
 					<div className="sign-up-password-confirm-container input-container" ref={confirmPasswordRef}>
 						<input 
-						onChange={passwordsMatch}
+						onChange={PasswordValidation}
 						className="signup-field-input"
 						id="password-confirm" 
 						type="password" 
