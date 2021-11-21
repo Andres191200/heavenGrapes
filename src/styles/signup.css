@@ -47,20 +47,19 @@ table {
 	border-spacing: 0;
 }
 
-.grapes, .wine-filling-cup{
+.signup-grapes-img, .signup-wine-filling-cup-img{
 	position: absolute;
+	pointer-events: none;
 }
 
-.grapes{
-	position: absolute;
+.signup-grapes-img{
 	left: 0;
 	top: -10px;
 	height: 650px;
 
 }
 
-.wine-filling-cup{
-	position: absolute;
+.signup-wine-filling-cup-img{
 	height: 700px;
 	right: -5px;
 	bottom: 0;
@@ -139,25 +138,29 @@ table {
 	outline: none;
 }
 
-.verify-password{
+.fill-bar-container{
 	width: 50%;
-	height: 5px;
+	height: 10px;
 	margin-top: 10px;
 	background: #FFF;
 }
 
 .fill-bar{
-	width: 0%;
-	background: red;
+	width: 0%;	
 	height: 100%;
 }
 
+.fill-bar-container, .fill-bar{
+	border-radius: 5px;
+}
+
 .weak-password, .ok-password, .good-password{
-	transition: .8s;
+	transition: .8s ease-in-out;
 }
 
 .weak-password{
 	width: 30%;
+	background: #C11;
 }
 
 .ok-password{

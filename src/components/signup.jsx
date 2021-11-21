@@ -1,30 +1,30 @@
 import React,{Form, useEffect as UseEffect, useState as UseState, useRef as UseRef, Fragment} from 'react';
 import {useForm as UseForm} from 'react-hook-form';
+import {userRegistration} from '../firebase/firebaseUtil';
 
 import '../styles/signup.css';
 import logo from '../media/img/logo.png';
 import wineFillingCup from '../media/img/wine-filling-cup.png';
 import grapes from '../media/img/grapes.png';
 
+
+
 const signup = () =>{
-	
-	
 	const {register, handleSubmit, formState: { errors }} = UseForm();
+	var err = ''
 
 	const usernameRef = UseRef();
 	const passwordRef = UseRef();
 	const confirmPasswordRef = UseRef();
 
-	
-
 	const [PasswordsMatch, setPasswordsMatch] = UseState(true);
 	const [IsPasswordStrong, setIsPasswordStrong] = UseState(''); 
 
-	const onSubmit = data =>{
-		console.log(data);
+	const onSubmit = async data =>{
+		await userRegistration(data.email, data.password); //SENDING TO FIREBASE MODULE...
+
 	}
 	
-
 	const PasswordValidation = () =>{	
 		var symbolsInPassword = [];
 		var startIndex = 0;
@@ -76,8 +76,8 @@ const signup = () =>{
 
 	return(
 		<div className="signup-main-container" >
-			<img className="grapes" src={grapes}/>	
-			<img className="wine-filling-cup" src={wineFillingCup}/>
+			<img className="signup-grapes-img" src={grapes}/>	
+			<img className="signup-wine-filling-cup-img" src={wineFillingCup}/>
 			<div className="signup-form-container">
 				<div className="signup-logo-container">
 					<img src={logo}/>
@@ -115,7 +115,7 @@ const signup = () =>{
 						{...register('password',{required:true, minLength:8})}				
 						onChange={PasswordValidation} //ERROR ENTRE EL REGISTER Y EL ONCHANGE!!
 						/>
-						<div className="verify-password">
+						<div className="fill-bar-container">
 							<div className="fill-bar"/>
 							<div className="password-strongness">
 								{IsPasswordStrong}
@@ -153,6 +153,11 @@ const signup = () =>{
 								PasswordsMatch===true ? " " : "Passwords doesn't match"
 							}
 						</h1>
+
+						<h1 className="error firebase-error">
+							
+						</h1>
+
 					</div>
 
 

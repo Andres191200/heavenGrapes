@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.main-contact-container{
+	background: #CCC;
+	display: flex;
+	align-items: center;
+	height: 90vh;
+	width: 100vw;
+}
+
+.options-info-container{
+	background: #FFF;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
+}
+
+.options-container{
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid #777;
+	align-items: flex-end;
+	min-width: 400px;
+}
+
+.main-contact-message{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+	background: #5d54e8;
+	color: #FFF;
+	width: 100%;
+	text-align: center;
+	font: 55px century gothic;
+}
+
+.options{
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.option{
+	display: flex;
+	align-items: center;
+	height: 3rem;
+	font: 18px century gothic;
+	width: 100%;
+	cursor: pointer;
+}
+
+.option h1{
+	margin-left: 10px;
+}
+
+.option:first-child{
+	border-top: 1px solid #333;
+}
+
+.option:hover{
+	background: #5d54e8;
+	transition: .5s ease-out;
+}
+
+.main-option-info-container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	background: #CCC;
+}
+
+.info-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 70%;	
+	width: 100%;
+	background: #AAA;
+}
+
+.info-container *{
+	text-align: center;
+}
+
+.info-container h1{
+	font-size: 40px;
+	margin-top: 20px;
+}
+
+.option-active{
+	background: #5d54e8;
+}
+
+.option-info{
+	height: 50%;
+	width: 70%;
+}
+
+.option-info > p{
+	font-size: 18px;
+}
+
+.option-info, .option-info > p{
+	margin-top: 20px;
+}
+
+
+
+
