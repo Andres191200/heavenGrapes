@@ -31,10 +31,21 @@ const contact = props =>{
 						</div>
 					</div>
 					<div className="main-option-info-container">
-						<div className="info-container">
+						<div className="option-title">
 							<h1>{option.name}</h1>	
-							<div className="option-info">
-								<p>{option.info}</p>
+						</div>
+						<div className="info-container">				
+							<div className="option-info-1">
+								<h1>A</h1>
+							</div>
+							<div className="option-info-2">
+								<h1>B</h1>
+							</div>
+							<div className="option-info-3">
+								<h1>C</h1>
+							</div>
+							<div className="option-info-4">
+								<h1>D</h1>
 							</div>
 						</div>
 					</div>

@@ -1,26 +1,32 @@
 [
 	{
 		"name":"Who we are?",
-		"info":"info here"
+		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
+		"icons":["icon1","icon2","icon3"]
 	},
 	{
 		"name":"Shipping",
-		"info":"info here"
+		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
+		"icons":["icon4","icon5","icon6"]
 	},
 	{
 		"name":"Payments",
-		"info":"info here"
+		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
+		"icons":["icon1","icon2","icon3"]
 	},
 	{
 		"name":"Refunds",
-		"info":"info here"
+		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
+		"icons":["icon1","icon2","icon3"]
 	},
 	{
 		"name":"Taxes",
-		"info":"info here"
+		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
+		"icons":["icon1","icon2","icon3"]
 	},
 	{
 		"name":"Have you had a problem?",
-		"info":"info here"
+		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
+		"icons":["icon1","icon2","icon3"]
 	}
 ]

@@ -120,44 +120,38 @@ table {
 	flex-direction: column;
 	height: 100%;
 	width: 100%;
-	background: #CCC;
+	background: #FFF;
+}
+
+.option-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font: 40px century gothic;
+	width: 100%;
+	height: 10%;
 }
 
 .info-container{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	height: 70%;	
-	width: 100%;
-	background: #AAA;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 }
 
 .info-container *{
 	text-align: center;
 }
 
-.info-container h1{
-	font-size: 40px;
-	margin-top: 20px;
-}
-
 .option-active{
 	background: #5d54e8;
 }
 
-.option-info{
-	height: 50%;
-	width: 70%;
+.option-info-1, .option-info-2, .option-info-3, .option-info-4{
+	height: 100%;
+	width: 100%;
 }
 
-.option-info > p{
-	font-size: 18px;
-}
 
-.option-info, .option-info > p{
-	margin-top: 20px;
-}
 
 
 
