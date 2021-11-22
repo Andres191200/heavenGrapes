@@ -2,7 +2,7 @@
 	{
 		"name":"Who we are?",
 		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
-		"icons":["icon1","icon2","icon3"]
+		"icons":["faBuilding","faTruck","faUser","faUsers"]
 	},
 	{
 		"name":"Shipping",
