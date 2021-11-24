@@ -1,32 +1,22 @@
 [
 	{
-		"name":"Who we are?",
-		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
-		"icons":["icon1","icon2","icon3"]
-	},
-	{
 		"name":"Shipping",
-		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
-		"icons":["icon4","icon5","icon6"]
+		"info":"Shipping process and dispatching delays based on countries"
 	},
 	{
 		"name":"Payments",
-		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
-		"icons":["icon1","icon2","icon3"]
+		"info":"More info about our payments methods"
 	},
 	{
 		"name":"Refunds",
-		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
-		"icons":["icon1","icon2","icon3"]
+		"info":"About how it is possible to get a refund"
 	},
 	{
 		"name":"Taxes",
-		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
-		"icons":["icon1","icon2","icon3"]
+		"info":"How much taxes for each country and region"
 	},
 	{
-		"name":"Have you had a problem?",
-		"info":"Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fuga dicta voluptatum harum, inventore atque ipsa quo laudantium voluptas, dolorem quas sapiente doloribus ullam voluptate, eaque quasi perspiciatis ducimus numquam autem?",
-		"icons":["icon1","icon2","icon3"]
+		"name":"¿Have you had a problem?",
+		"info":"If you have had any problem, write us"
 	}
 ]
