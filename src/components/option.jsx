@@ -1,32 +1,20 @@
 import React,{ useState as UseState} from 'react';
-var count=0;
-var previousElementActive;
+import options from '../contact-view-options.json';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const option = props =>{	
-
-	const optionClick = (event) =>{
-		if(event.target.classList.contains('option-name')){
-			event.target.parentElement.classList.add('option-active');
-			props.setOption(props.option);
-			if(count>=1){
-				previousElementActive.classList.remove('option-active');
-			}
-			previousElementActive = event.target.parentElement;
-			count++;
-		}else{
-			event.target.classList.add('option-active');
-			props.setOption(props.option);
-			if(count>=1){
-				previousElementActive.classList.remove('option-active');
-			}
-			previousElementActive = event.target;
-			count++;
-		}
-}
-
 	return(
-		<div className="option" onClick={optionClick}>
-			<h1 className="option-name">{props.option.name}</h1>
+		<div className="option">
+			<div className="option-icon-container">
+				<FontAwesomeIcon icon={props.icon}/>
+			</div>
+			<div className="option-name-container">
+				<h1>{props.name}</h1>
+			</div>
+			<div className="option-description-container">
+				<p>{props.info}</p>
+			</div>
 		</div>
 	)
 }
