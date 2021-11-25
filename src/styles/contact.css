@@ -97,7 +97,7 @@ table {
 	font: 2em century gothic;
 }
 
-.info-container{
+.contact-info-container{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);

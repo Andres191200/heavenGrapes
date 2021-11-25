@@ -2,16 +2,9 @@ import React, {Fragment, useState as UseState} from 'react';
 
 import '../styles/contact.css';
 
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
-import {faUser, faTruck, faBuilding, faUsers} from '@fortawesome/free-solid-svg-icons';
-
 import Header from './header.jsx';
 import options from '../contact-view-options.json';
 import Option from './option.jsx'; 	
-
-import { config } from '@fortawesome/fontawesome-svg-core';
-config.familyPrefix = 'fa';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -22,7 +15,7 @@ import {faFileInvoiceDollar} from '@fortawesome/free-solid-svg-icons';
 import {faAngry} from '@fortawesome/free-solid-svg-icons';
 
 const icons = [faGlobeAmericas,faMoneyBillWave,faCoins,faFileInvoiceDollar,faAngry]; //ARRAY OF ICONS TO PASS INTO OPTION COMPONENT
-															//AND RENDER THEM...
+																					//AND RENDER THEM...
 const contact = props =>{
 
 	const [option, setOption] = UseState('');
@@ -34,7 +27,7 @@ const contact = props =>{
 				<div className="option-title">
 					<h1>¿How can we help you?</h1>	
 				</div>
-				<div className="info-container">
+				<div className="contact-info-container">
 					{
 						options.map((option,index) =>(
 							<div className={"option-info option-info-" + index}>
