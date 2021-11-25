@@ -36,7 +36,6 @@ const ProductSection = (props) =>{
 				<div className="some-wines-text">
 					<h1>Our catalog</h1>
 				</div>
-				<button onClick={scrollDiv}>click</button>
 				{
 					cards.map((card,index) =>
 					<a href={"/product/" + index}>

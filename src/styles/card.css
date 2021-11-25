@@ -74,7 +74,7 @@ table {
 
 .card p{
 	font: 15px century gothic;
-	margin: 0 20px 50px 20px;
+	margin: 0 20px 40px 20px;
 	min-height: 65px;
 }
 
@@ -101,3 +101,20 @@ table {
 	color: #000 !important;
 	font: bold 20px arial !important;
   }
+
+.add-to-cart-button{ 
+	display: flex;
+	align-items: center;
+	border: 1px solid #444;
+	font: 14px century gothic;
+	margin-bottom: 5px;
+	cursor: pointer;
+	letter-spacing: -.5px;
+	border-radius: 4px;
+	background: transparent;
+}
+
+.add-to-cart-button > *{
+	font-size: 20px;
+	height: 25px;
+}
